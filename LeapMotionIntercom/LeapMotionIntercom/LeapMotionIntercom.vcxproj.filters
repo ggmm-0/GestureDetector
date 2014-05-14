@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\listener">
+      <UniqueIdentifier>{498931e6-9b65-4a04-a18d-da9ce8a27e65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\listener">
+      <UniqueIdentifier>{3ce1746e-2e2c-462f-a4d8-cd3bf14dd43b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\util">
+      <UniqueIdentifier>{efab6ff0-85d7-4a9e-a4ce-5ade2b287f93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\listener\impl">
+      <UniqueIdentifier>{10ed644d-d1b3-4965-896a-14e53bb5235e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\listener\impl\stdout">
+      <UniqueIdentifier>{c7e12799-47aa-4a91-b10f-b17a2f3c11de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\listener\impl">
+      <UniqueIdentifier>{623e134f-adbb-4b58-bb6b-f00f21d2eed2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\config">
+      <UniqueIdentifier>{64357569-03e8-43ae-ab31-b5abe5bda33d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\config\impl">
+      <UniqueIdentifier>{d5be551d-e99d-4316-ae38-650cfe6553f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\config\impl\default">
+      <UniqueIdentifier>{3aefb3bc-ed01-48d5-9fa0-ec2a45478b3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\config">
+      <UniqueIdentifier>{c4ef2c4f-642f-46b8-87f5-f88e09d9ce84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\config\default">
+      <UniqueIdentifier>{bfc6f454-8f83-49e5-b080-7ce7a1707cd1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\listener\impl\stdout">
+      <UniqueIdentifier>{a63e0192-2f67-47fb-a85a-ece49d7dde0c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Application.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseScreenTapListener.cpp">
+      <Filter>Source Files\listener</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseKeyTapListener.cpp">
+      <Filter>Source Files\listener</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseSwipeListener.cpp">
+      <Filter>Source Files\listener</Filter>
+    </ClCompile>
+    <ClCompile Include="AbstractGestureListener.cpp">
+      <Filter>Source Files\listener</Filter>
+    </ClCompile>
+    <ClCompile Include="StandardOutputKeyTapListener.cpp">
+      <Filter>Source Files\listener\impl\stdout</Filter>
+    </ClCompile>
+    <ClCompile Include="StandardOutputScreenTapListener.cpp">
+      <Filter>Source Files\listener\impl\stdout</Filter>
+    </ClCompile>
+    <ClCompile Include="StandardOutputSwipeListener.cpp">
+      <Filter>Source Files\listener\impl\stdout</Filter>
+    </ClCompile>
+    <ClCompile Include="DefaultConfiguration.cpp">
+      <Filter>Source Files\config\default</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Direction.h">
+      <Filter>Header Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="Application.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DefaultConfiguration.hpp">
+      <Filter>Header Files\config\impl\default</Filter>
+    </ClInclude>
+    <ClInclude Include="Configuration.hpp">
+      <Filter>Header Files\config</Filter>
+    </ClInclude>
+    <ClInclude Include="StandardOutputKeyTapListener.hpp">
+      <Filter>Header Files\listener\impl\stdout</Filter>
+    </ClInclude>
+    <ClInclude Include="StandardOutputScreenTapListener.hpp">
+      <Filter>Header Files\listener\impl\stdout</Filter>
+    </ClInclude>
+    <ClInclude Include="StandardOutputSwipeListener.hpp">
+      <Filter>Header Files\listener\impl\stdout</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractGestureListener.hpp">
+      <Filter>Header Files\listener</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseKeyTapListener.hpp">
+      <Filter>Header Files\listener</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseScreenTapListener.hpp">
+      <Filter>Header Files\listener</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseSwipeListener.hpp">
+      <Filter>Header Files\listener</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
