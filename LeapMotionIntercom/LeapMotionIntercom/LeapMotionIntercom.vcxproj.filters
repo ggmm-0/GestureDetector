@@ -46,7 +46,7 @@
     <Filter Include="Source Files\config\default">
       <UniqueIdentifier>{bfc6f454-8f83-49e5-b080-7ce7a1707cd1}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\listener\impl\stdout">
+    <Filter Include="Source Files\listener\impl\default">
       <UniqueIdentifier>{a63e0192-2f67-47fb-a85a-ece49d7dde0c}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -69,17 +69,17 @@
     <ClCompile Include="AbstractGestureListener.cpp">
       <Filter>Source Files\listener</Filter>
     </ClCompile>
-    <ClCompile Include="StandardOutputKeyTapListener.cpp">
-      <Filter>Source Files\listener\impl\stdout</Filter>
-    </ClCompile>
-    <ClCompile Include="StandardOutputScreenTapListener.cpp">
-      <Filter>Source Files\listener\impl\stdout</Filter>
-    </ClCompile>
-    <ClCompile Include="StandardOutputSwipeListener.cpp">
-      <Filter>Source Files\listener\impl\stdout</Filter>
-    </ClCompile>
     <ClCompile Include="DefaultConfiguration.cpp">
       <Filter>Source Files\config\default</Filter>
+    </ClCompile>
+    <ClCompile Include="DefaultKeyTapListener.cpp">
+      <Filter>Source Files\listener\impl\default</Filter>
+    </ClCompile>
+    <ClCompile Include="DefaultScreenTapListener.cpp">
+      <Filter>Source Files\listener\impl\default</Filter>
+    </ClCompile>
+    <ClCompile Include="DefaultSwipeListener.cpp">
+      <Filter>Source Files\listener\impl\default</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -95,15 +95,6 @@
     <ClInclude Include="Configuration.hpp">
       <Filter>Header Files\config</Filter>
     </ClInclude>
-    <ClInclude Include="StandardOutputKeyTapListener.hpp">
-      <Filter>Header Files\listener\impl\stdout</Filter>
-    </ClInclude>
-    <ClInclude Include="StandardOutputScreenTapListener.hpp">
-      <Filter>Header Files\listener\impl\stdout</Filter>
-    </ClInclude>
-    <ClInclude Include="StandardOutputSwipeListener.hpp">
-      <Filter>Header Files\listener\impl\stdout</Filter>
-    </ClInclude>
     <ClInclude Include="AbstractGestureListener.hpp">
       <Filter>Header Files\listener</Filter>
     </ClInclude>
@@ -115,6 +106,15 @@
     </ClInclude>
     <ClInclude Include="BaseSwipeListener.hpp">
       <Filter>Header Files\listener</Filter>
+    </ClInclude>
+    <ClInclude Include="DefaultKeyTapListener.hpp">
+      <Filter>Header Files\listener\impl\stdout</Filter>
+    </ClInclude>
+    <ClInclude Include="DefaultScreenTapListener.hpp">
+      <Filter>Header Files\listener\impl\stdout</Filter>
+    </ClInclude>
+    <ClInclude Include="DefaultSwipeListener.hpp">
+      <Filter>Header Files\listener\impl\stdout</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

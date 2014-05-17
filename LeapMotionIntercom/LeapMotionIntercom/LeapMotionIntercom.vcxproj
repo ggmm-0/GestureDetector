@@ -84,9 +84,9 @@
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="BaseScreenTapListener.cpp" />
     <ClCompile Include="BaseSwipeListener.cpp" />
-    <ClCompile Include="StandardOutputKeyTapListener.cpp" />
-    <ClCompile Include="StandardOutputScreenTapListener.cpp" />
-    <ClCompile Include="StandardOutputSwipeListener.cpp" />
+    <ClCompile Include="DefaultKeyTapListener.cpp" />
+    <ClCompile Include="DefaultScreenTapListener.cpp" />
+    <ClCompile Include="DefaultSwipeListener.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Application.hpp" />
@@ -97,9 +97,9 @@
     <ClInclude Include="BaseKeyTapListener.hpp" />
     <ClInclude Include="BaseScreenTapListener.hpp" />
     <ClInclude Include="BaseSwipeListener.hpp" />
-    <ClInclude Include="StandardOutputKeyTapListener.hpp" />
-    <ClInclude Include="StandardOutputScreenTapListener.hpp" />
-    <ClInclude Include="StandardOutputSwipeListener.hpp" />
+    <ClInclude Include="DefaultKeyTapListener.hpp" />
+    <ClInclude Include="DefaultScreenTapListener.hpp" />
+    <ClInclude Include="DefaultSwipeListener.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,8 +1,8 @@
-#include "StandardOutputScreenTapListener.hpp"
+#include "DefaultScreenTapListener.hpp"
 
 using namespace Leap;
 
-void StandardOutputScreenTapListener::onScreenTap(const ScreenTapGesture& screenTap) {
+void DefaultScreenTapListener::onScreenTap(const ScreenTapGesture& screenTap) {
 	std::cout
 		<< "Screen tap event has occured in: ("
 		<< screenTap.position()[0] << ","

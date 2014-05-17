@@ -1,8 +1,8 @@
-#include "StandardOutputKeyTapListener.hpp"
+#include "DefaultKeyTapListener.hpp"
 
 using namespace Leap;
 
-void StandardOutputKeyTapListener::onKeyTap(const KeyTapGesture& keyTap) {
+void DefaultKeyTapListener::onKeyTap(const KeyTapGesture& keyTap) {
 	std::cout
 		<< "Key tap event has occured in: ("
 		<< keyTap.position()[0] << ","

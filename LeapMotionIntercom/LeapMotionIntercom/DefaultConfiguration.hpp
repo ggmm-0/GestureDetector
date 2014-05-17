@@ -3,12 +3,13 @@
 
 #include <memory>
 #include "Configuration.hpp"
-#include "StandardOutputKeyTapListener.hpp"
-#include "StandardOutputScreenTapListener.hpp"
-#include "StandardOutputSwipeListener.hpp"
+#include "DefaultKeyTapListener.hpp"
+#include "DefaultScreenTapListener.hpp"
+#include "DefaultSwipeListener.hpp"
 
 /*
  * Default implementation of Application's Configuration interface.
+ * This class uses default listeners that print events to standard output.
  * @author: Grzegorz Mirek
 */
 class DefaultConfiguration : public Configuration {

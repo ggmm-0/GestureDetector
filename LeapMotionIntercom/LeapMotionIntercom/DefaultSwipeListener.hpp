@@ -1,5 +1,5 @@
-#ifndef STANDARD_OUTPUT_SWIPE_LISTENER_HPP
-#define STANDARD_OUTPUT_SWIPE_LISTENER_HPP
+#ifndef DEFAULT_SWIPE_LISTENER_HPP
+#define DEFAULT_SWIPE_LISTENER_HPP
 
 #include <iostream>
 #include "BaseSwipeListener.hpp"
@@ -8,7 +8,7 @@
  * Prints Swipe events to standard output.
  * @author: Grzegorz Mirek
 */
-class StandardOutputSwipeListener : public BaseSwipeListener {
+class DefaultSwipeListener : public BaseSwipeListener {
 public:
 	void onLeftSwipe(const Leap::SwipeGesture& screenTap);
 	void onRightSwipe(const Leap::SwipeGesture& screenTap);
