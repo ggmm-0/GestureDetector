@@ -22,6 +22,7 @@ public:
 	void end();
 private:
 	void addGestureListenersToController();
+	void setControllerPolicyFlags();
 	void removeGestureListenersFromController();
 };
 

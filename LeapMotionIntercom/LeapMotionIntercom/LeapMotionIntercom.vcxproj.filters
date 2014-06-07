@@ -25,9 +25,6 @@
     <Filter Include="Header Files\listener\impl">
       <UniqueIdentifier>{10ed644d-d1b3-4965-896a-14e53bb5235e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\listener\impl\stdout">
-      <UniqueIdentifier>{c7e12799-47aa-4a91-b10f-b17a2f3c11de}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\listener\impl">
       <UniqueIdentifier>{623e134f-adbb-4b58-bb6b-f00f21d2eed2}</UniqueIdentifier>
     </Filter>
@@ -49,6 +46,39 @@
     <Filter Include="Source Files\listener\impl\default">
       <UniqueIdentifier>{a63e0192-2f67-47fb-a85a-ece49d7dde0c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\config\impl\mapping">
+      <UniqueIdentifier>{bd89251b-b211-4cfa-818b-ac74ed4414a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\config\mapping">
+      <UniqueIdentifier>{a9e01dc7-b526-4138-87fd-bea33f68a665}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\listener\impl\default">
+      <UniqueIdentifier>{c7e12799-47aa-4a91-b10f-b17a2f3c11de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\listener\impl\mapping">
+      <UniqueIdentifier>{3b4f9ae5-05e9-4b43-8959-62083be0ca2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\listener\impl\mapping">
+      <UniqueIdentifier>{e0a1f953-de52-4921-b66d-fee3c6ce8904}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\event">
+      <UniqueIdentifier>{d381f294-d547-4f71-b31e-98d1e234777a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\event\mouse">
+      <UniqueIdentifier>{c7ec0bf6-60ee-4490-9a2f-3fa02f7fab1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\event\key">
+      <UniqueIdentifier>{3e2e9dac-7554-4df1-86b0-acc1c152ce08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\event">
+      <UniqueIdentifier>{ca8c6802-e2dc-499d-9daf-1d3270ea304f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\event\mouse">
+      <UniqueIdentifier>{887aa6cc-ee2b-4e47-bd1e-4cbe62991e42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\event\key">
+      <UniqueIdentifier>{453d0ba0-314e-45a0-95d2-9938570ac8b0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -56,9 +86,6 @@
     </ClCompile>
     <ClCompile Include="Application.cpp">
       <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="BaseScreenTapListener.cpp">
-      <Filter>Source Files\listener</Filter>
     </ClCompile>
     <ClCompile Include="BaseKeyTapListener.cpp">
       <Filter>Source Files\listener</Filter>
@@ -80,6 +107,30 @@
     </ClCompile>
     <ClCompile Include="DefaultSwipeListener.cpp">
       <Filter>Source Files\listener\impl\default</Filter>
+    </ClCompile>
+    <ClCompile Include="MappingConfiguration.cpp">
+      <Filter>Source Files\config\mapping</Filter>
+    </ClCompile>
+    <ClCompile Include="MappingScreenTapListener.cpp">
+      <Filter>Source Files\listener\impl\mapping</Filter>
+    </ClCompile>
+    <ClCompile Include="MappingKeyTapListener.cpp">
+      <Filter>Source Files\listener\impl\mapping</Filter>
+    </ClCompile>
+    <ClCompile Include="MappingSwipeListener.cpp">
+      <Filter>Source Files\listener\impl\mapping</Filter>
+    </ClCompile>
+    <ClCompile Include="MouseEvent.cpp">
+      <Filter>Source Files\event\mouse</Filter>
+    </ClCompile>
+    <ClCompile Include="LeftMouseButtonEvent.cpp">
+      <Filter>Source Files\event\mouse</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyEvent.cpp">
+      <Filter>Source Files\event\key</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseScreenTapListener.cpp">
+      <Filter>Source Files\listener</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -108,13 +159,37 @@
       <Filter>Header Files\listener</Filter>
     </ClInclude>
     <ClInclude Include="DefaultKeyTapListener.hpp">
-      <Filter>Header Files\listener\impl\stdout</Filter>
+      <Filter>Header Files\listener\impl\default</Filter>
     </ClInclude>
     <ClInclude Include="DefaultScreenTapListener.hpp">
-      <Filter>Header Files\listener\impl\stdout</Filter>
+      <Filter>Header Files\listener\impl\default</Filter>
     </ClInclude>
     <ClInclude Include="DefaultSwipeListener.hpp">
-      <Filter>Header Files\listener\impl\stdout</Filter>
+      <Filter>Header Files\listener\impl\default</Filter>
+    </ClInclude>
+    <ClInclude Include="MappingSwipeListener.hpp">
+      <Filter>Header Files\listener\impl\mapping</Filter>
+    </ClInclude>
+    <ClInclude Include="MappingScreenTapListener.hpp">
+      <Filter>Header Files\listener\impl\mapping</Filter>
+    </ClInclude>
+    <ClInclude Include="MappingKeyTapListener.hpp">
+      <Filter>Header Files\listener\impl\mapping</Filter>
+    </ClInclude>
+    <ClInclude Include="MappingConfiguration.hpp">
+      <Filter>Header Files\config\impl\mapping</Filter>
+    </ClInclude>
+    <ClInclude Include="Event.hpp">
+      <Filter>Header Files\event</Filter>
+    </ClInclude>
+    <ClInclude Include="MouseEvent.hpp">
+      <Filter>Header Files\event\mouse</Filter>
+    </ClInclude>
+    <ClInclude Include="LeftMouseButtonEvent.hpp">
+      <Filter>Header Files\event\mouse</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyEvent.hpp">
+      <Filter>Header Files\event\key</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

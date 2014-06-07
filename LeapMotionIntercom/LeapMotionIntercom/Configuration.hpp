@@ -3,6 +3,7 @@
 
 #include <memory>
 #include "AbstractGestureListener.hpp"
+#include "Leap.h"
 
 /*
  * Application Configuration interface.
@@ -11,6 +12,7 @@
 class Configuration {
 public:
 	virtual std::vector<std::shared_ptr<AbstractGestureListener>> getGestureListeners() = 0;
+	virtual Leap::Controller::PolicyFlag getPolicyFlag() = 0;
 };
 
 #endif

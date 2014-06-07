@@ -8,11 +8,11 @@
  * @author: Grzegorz Mirek
 */
 class BaseScreenTapListener : public AbstractGestureListener {
-protected:
-	Leap::Gesture::Type getGestureType();
 public:
 	void onGestureDetected(const Leap::Gesture&);
 	virtual void onScreenTap(const Leap::ScreenTapGesture& screenTap) = 0;
+protected:
+	Leap::Gesture::Type getGestureType();
 };
 
 #endif

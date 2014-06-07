@@ -6,6 +6,7 @@ Application::Application(std::shared_ptr<Configuration> configuration) : configu
 
 void Application::start() {
 	addGestureListenersToController();
+	setControllerPolicyFlags();
 }
 
 void Application::addGestureListenersToController() {
@@ -14,6 +15,11 @@ void Application::addGestureListenersToController() {
 		[this](std::shared_ptr<AbstractGestureListener> listener) -> void {
 			controller.addListener(*listener);
 	});
+}
+
+void Application::setControllerPolicyFlags() {
+	Controller::PolicyFlag flag = configuration->getPolicyFlag();
+	controller.setPolicyFlags(flag);
 }
 
 void Application::end() {

@@ -1,5 +1,7 @@
 #include "DefaultConfiguration.hpp"
 
+using namespace Leap;
+
 DefaultConfiguration::DefaultConfiguration() {
 	createGestureListeners();
 }
@@ -12,4 +14,8 @@ void DefaultConfiguration::createGestureListeners() {
 
 std::vector<std::shared_ptr<AbstractGestureListener>> DefaultConfiguration::getGestureListeners() {
 	return listeners;
+}
+
+Controller::PolicyFlag DefaultConfiguration::getPolicyFlag() {
+	return Controller::PolicyFlag::POLICY_DEFAULT;
 }

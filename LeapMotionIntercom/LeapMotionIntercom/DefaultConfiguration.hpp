@@ -18,6 +18,7 @@ private:
 public:
 	DefaultConfiguration();
 	std::vector<std::shared_ptr<AbstractGestureListener>> getGestureListeners();
+	Leap::Controller::PolicyFlag getPolicyFlag();
 private:
 	void createGestureListeners();
 };
