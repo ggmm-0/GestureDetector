@@ -2,7 +2,8 @@
 
 using namespace Leap;
 
-const std::chrono::milliseconds AbstractGestureListener::NEW_GESTURE_MIN_TIME_DIFFERENCE = std::chrono::milliseconds(500);
+const std::chrono::milliseconds AbstractGestureListener::MIN_TIME_DIFFERENCE_BETWEEN_CONSECUTIVE_GESTURES = 
+		std::chrono::milliseconds(500);
 
 AbstractGestureListener::AbstractGestureListener() : lastGestureTimestamp(std::chrono::milliseconds(0)) {}
 
@@ -49,5 +50,5 @@ bool AbstractGestureListener::isNotDuplicatedGesture() {
 	auto currentTime = std::chrono::system_clock::now();
 	std::chrono::milliseconds timeDifference = 
 		std::chrono::duration_cast<std::chrono::milliseconds>(currentTime - lastGestureTimestamp);
-	return timeDifference >= NEW_GESTURE_MIN_TIME_DIFFERENCE;
+	return timeDifference >= MIN_TIME_DIFFERENCE_BETWEEN_CONSECUTIVE_GESTURES;
 }

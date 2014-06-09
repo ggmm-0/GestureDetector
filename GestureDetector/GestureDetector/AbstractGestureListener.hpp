@@ -10,7 +10,7 @@
 */
 class AbstractGestureListener : public Leap::Listener {
 private:
-	static const std::chrono::milliseconds NEW_GESTURE_MIN_TIME_DIFFERENCE;
+	static const std::chrono::milliseconds MIN_TIME_DIFFERENCE_BETWEEN_CONSECUTIVE_GESTURES;
 	std::chrono::time_point<std::chrono::system_clock, std::chrono::system_clock::duration> lastGestureTimestamp;
 public:
 	AbstractGestureListener();
