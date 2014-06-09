@@ -15,6 +15,7 @@ protected:
 	virtual void onGestureDetected(const Leap::Gesture&) = 0;
 	virtual Leap::Gesture::Type getGestureType() = 0;
 private:
+	void invokeCallbackIfCorrectGestureDetected(const Gesture& gesture, const Frame& previousFrame);
 	bool isProperGestureType(const Leap::Gesture&);
 	bool isNewGesture(const Leap::Gesture&, const Leap::Frame& previousFrame);
 	void processGestures(const Leap::Frame& currentFrame, const Leap::Frame& previousFrame);

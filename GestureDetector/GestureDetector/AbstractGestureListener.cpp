@@ -14,12 +14,13 @@ void AbstractGestureListener::onFrame(const Controller& controller) {
 
 void AbstractGestureListener::processGestures(const Frame& currentFrame, const Frame& previousFrame) {
 	auto gestures = currentFrame.gestures();
-	for (int i = 0; i < gestures.count(); ++i) {
-		auto gesture = gestures[i];
-		if (isProperGestureType(gesture) &&
-			isNewGesture(gesture, previousFrame))
-			onGestureDetected(gesture);
-	}
+	for (int i = 0; i < gestures.count(); ++i)
+		invokeCallbackIfCorrectGestureDetected(gestures[i], previousFrame);
+}
+
+void AbstractGestureListener::invokeCallbackIfCorrectGestureDetected(const Gesture& gesture, const Frame& previousFrame) {
+	if (isProperGestureType(gesture) && isNewGesture(gesture, previousFrame))
+		onGestureDetected(gesture);
 }
 
 bool AbstractGestureListener::isProperGestureType(const Gesture& gesture) {
