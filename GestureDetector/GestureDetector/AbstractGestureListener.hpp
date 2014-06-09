@@ -9,10 +9,10 @@
 */
 class AbstractGestureListener : public Leap::Listener {
 public:
-	void onConnect(const Leap::Controller&);
-	void onFrame(const Leap::Controller&);
-	virtual void onGestureDetected(const Leap::Gesture&) = 0;
+	void onConnect(const Leap::Controller&) override;
+	void onFrame(const Leap::Controller&) override;
 protected:
+	virtual void onGestureDetected(const Leap::Gesture&) = 0;
 	virtual Leap::Gesture::Type getGestureType() = 0;
 private:
 	bool isProperGestureType(const Leap::Gesture&);

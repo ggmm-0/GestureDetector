@@ -9,14 +9,13 @@
  * @author: Grzegorz Mirek
 */
 class BaseSwipeListener : public AbstractGestureListener {
-public:
-	void onGestureDetected(const Leap::Gesture&);
+protected:
+	void onGestureDetected(const Leap::Gesture&) override;
+	Leap::Gesture::Type getGestureType() override;
 	virtual void onLeftSwipe(const Leap::SwipeGesture& swipe) = 0;
 	virtual void onRightSwipe(const Leap::SwipeGesture& swipe) = 0;
 	virtual void onUpSwipe(const Leap::SwipeGesture& swipe) = 0;
 	virtual void onDownSwipe(const Leap::SwipeGesture& swipe) = 0;
-protected:
-	Leap::Gesture::Type getGestureType();
 private:
 	Direction calculateDirection(const Leap::SwipeGesture& swipe);
 	Direction determineDirection(float horizontalSwipeValue, float verticalSwipeValue);

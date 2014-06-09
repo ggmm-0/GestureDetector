@@ -9,8 +9,8 @@
  * @author: Grzegorz Mirek
 */
 class DefaultKeyTapListener : public BaseKeyTapListener {
-public:
-	void onKeyTap(const Leap::KeyTapGesture& keyTap);
+protected:
+	void onKeyTap(const Leap::KeyTapGesture& keyTap) override;
 };
 
 #endif

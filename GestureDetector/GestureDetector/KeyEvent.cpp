@@ -14,7 +14,7 @@ INPUT KeyEvent::createKeyDownInput() {
 }
 
 INPUT KeyEvent::createKeyUpInput() {
-	INPUT input = createKeyInput(keyCode);
+	auto input = createKeyInput(keyCode);
 	input.ki.dwFlags = KEYEVENTF_KEYUP;
 	return input;
 }

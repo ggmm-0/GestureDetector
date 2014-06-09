@@ -9,8 +9,8 @@
  * @author: Grzegorz Mirek
 */
 class MappingScreenTapListener : public BaseScreenTapListener {
-public:
-	void onScreenTap(const Leap::ScreenTapGesture& screenTap);
+protected:
+	void onScreenTap(const Leap::ScreenTapGesture& screenTap) override;
 };
 
 #endif

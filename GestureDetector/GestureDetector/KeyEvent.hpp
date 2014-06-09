@@ -12,7 +12,7 @@ private:
 	int keyCode;
 public:
 	KeyEvent(int keyCode);
-	void trigger();
+	void trigger() override;
 private:
 	INPUT createKeyDownInput();
 	INPUT createKeyUpInput();

@@ -9,11 +9,11 @@
  * @author: Grzegorz Mirek
 */
 class DefaultSwipeListener : public BaseSwipeListener {
-public:
-	void onLeftSwipe(const Leap::SwipeGesture& screenTap);
-	void onRightSwipe(const Leap::SwipeGesture& screenTap);
-	void onUpSwipe(const Leap::SwipeGesture& screenTap);
-	void onDownSwipe(const Leap::SwipeGesture& screenTap);
+protected:
+	void onLeftSwipe(const Leap::SwipeGesture& screenTap) override;
+	void onRightSwipe(const Leap::SwipeGesture& screenTap) override;
+	void onUpSwipe(const Leap::SwipeGesture& screenTap) override;
+	void onDownSwipe(const Leap::SwipeGesture& screenTap) override;
 };
 
 #endif

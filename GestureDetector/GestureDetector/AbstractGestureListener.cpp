@@ -7,15 +7,15 @@ void AbstractGestureListener::onConnect(const Controller& controller) {
 }
 
 void AbstractGestureListener::onFrame(const Controller& controller) {
-	const Frame frame = controller.frame(); 
-	const Frame previousFrame = controller.frame(1);
+	const auto frame = controller.frame(); 
+	const auto previousFrame = controller.frame(1);
 	processGestures(frame, previousFrame);
 }
 
 void AbstractGestureListener::processGestures(const Frame& currentFrame, const Frame& previousFrame) {
-	GestureList gestures = currentFrame.gestures();
+	auto gestures = currentFrame.gestures();
 	for (int i = 0; i < gestures.count(); ++i) {
-		Gesture gesture = gestures[i];
+		auto gesture = gestures[i];
 		if (isProperGestureType(gesture) &&
 			isNewGesture(gesture, previousFrame))
 			onGestureDetected(gesture);
@@ -27,6 +27,6 @@ bool AbstractGestureListener::isProperGestureType(const Gesture& gesture) {
 }
 
 bool AbstractGestureListener::isNewGesture(const Gesture& gesture, const Frame& previousFrame) {
-	Gesture previousGesture = previousFrame.gesture(gesture.id());
+	auto previousGesture = previousFrame.gesture(gesture.id());
 	return ! previousGesture.isValid();
 }

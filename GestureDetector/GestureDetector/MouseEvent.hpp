@@ -9,7 +9,7 @@
 */
 class MouseEvent : public Event {
 public:
-	void trigger();
+	void trigger() override;
 protected:
 	virtual int getButtonDownCode() = 0;
 	virtual int getButtonUpCode() = 0;

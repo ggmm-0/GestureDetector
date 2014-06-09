@@ -8,8 +8,8 @@
 */
 class LeftMouseButtonEvent : public MouseEvent {
 protected:
-	int getButtonDownCode();
-	int getButtonUpCode();
+	int getButtonDownCode() override;
+	int getButtonUpCode() override;
 };
 
 #endif

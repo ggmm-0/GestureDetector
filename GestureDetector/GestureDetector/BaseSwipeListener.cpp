@@ -7,7 +7,7 @@ Gesture::Type BaseSwipeListener::getGestureType() {
 }
 
 void BaseSwipeListener::onGestureDetected(const Gesture& gesture) {
-	SwipeGesture swipe = SwipeGesture(gesture);
+	auto swipe = SwipeGesture(gesture);
 	switch (calculateDirection(gesture)) {
 	case LEFT:
 		onLeftSwipe(swipe);
@@ -25,8 +25,8 @@ void BaseSwipeListener::onGestureDetected(const Gesture& gesture) {
 }
 
 Direction BaseSwipeListener::calculateDirection(const SwipeGesture& swipe) {
-	float horizontalSwipeValue = swipe.direction()[0];
-	float verticalSwipeValue = swipe.direction()[1];
+	auto horizontalSwipeValue = swipe.direction()[0];
+	auto verticalSwipeValue = swipe.direction()[1];
 	return determineDirection(horizontalSwipeValue, verticalSwipeValue);
 }
 

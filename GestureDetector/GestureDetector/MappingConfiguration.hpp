@@ -17,8 +17,8 @@ private:
 	std::vector<std::shared_ptr<AbstractGestureListener>> listeners;
 public:
 	MappingConfiguration();
-	std::vector<std::shared_ptr<AbstractGestureListener>> getGestureListeners();
-	Leap::Controller::PolicyFlag getPolicyFlag();
+	std::vector<std::shared_ptr<AbstractGestureListener>> getGestureListeners() override;
+	Leap::Controller::PolicyFlag getPolicyFlag() override;
 private:
 	void createGestureListeners();
 };

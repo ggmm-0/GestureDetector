@@ -8,11 +8,10 @@
  * @author: Grzegorz Mirek
 */
 class BaseKeyTapListener : public AbstractGestureListener {
-public:
-	void onGestureDetected(const Leap::Gesture&);
-	virtual void onKeyTap(const Leap::KeyTapGesture& keyTap) = 0;
 protected:
-	Leap::Gesture::Type getGestureType();
+	void onGestureDetected(const Leap::Gesture&) override;
+	Leap::Gesture::Type getGestureType() override;
+	virtual void onKeyTap(const Leap::KeyTapGesture& keyTap) = 0;
 };
 
 #endif
