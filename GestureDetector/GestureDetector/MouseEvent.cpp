@@ -2,8 +2,8 @@
 
 void MouseEvent::trigger() {
 	INPUT input[2];
-	input[0] = createMouseInput(MOUSEEVENTF_LEFTDOWN);
-	input[1] = createMouseInput(MOUSEEVENTF_LEFTUP);
+	input[0] = createMouseInput(getButtonDownCode());
+	input[1] = createMouseInput(getButtonUpCode());
 	SendInput(2, input, sizeof(INPUT));
 }
 
