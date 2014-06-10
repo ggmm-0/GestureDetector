@@ -15,6 +15,10 @@ void main() {
 }
 
 void waitForExit() {
-	std::cout << "Press Enter to exit..." << std::endl;
+	std::cout
+		<< "Gesture Detector v1.0" 
+		<< std::endl << std::endl
+		<< "Press Enter to exit..." 
+		<< std::endl;
 	std::cin.get();
 }
