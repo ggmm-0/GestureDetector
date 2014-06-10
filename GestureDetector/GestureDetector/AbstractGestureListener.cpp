@@ -3,7 +3,7 @@
 using namespace Leap;
 
 const std::chrono::milliseconds AbstractGestureListener::MIN_TIME_DIFFERENCE_BETWEEN_CONSECUTIVE_GESTURES = 
-		std::chrono::milliseconds(500);
+		std::chrono::milliseconds(350);
 
 AbstractGestureListener::AbstractGestureListener() : lastGestureTimestamp(std::chrono::milliseconds(0)) {}
 
